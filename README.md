@@ -106,7 +106,7 @@ Available functions
 
 | Signature | Description |
 | ---- | ----------- |
-| `define(srcDir, destDir, options, options.pattern, options.presets) -> function` | Define task |
+| `define(srcDir, destDir, options) -> function` | Define task |
 
 
 <!-- Section from "doc/guides/03.Functions.md.hbs" End -->
