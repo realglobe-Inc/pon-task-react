@@ -95,21 +95,29 @@ tryExample()
 
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
-<!-- Section from "doc/guides/03.Functions.md.hbs" Start -->
+<!-- Section from "doc/guides/03.Signature.md.hbs" Start -->
 
-<a name="section-doc-guides-03-functions-md"></a>
+<a name="section-doc-guides-03-signature-md"></a>
 
-Functions
+Signatures
 ---------
 
-Available functions
 
-| Signature | Description |
-| ---- | ----------- |
-| `define(srcDir, destDir, options) -> function` | Define task |
+### `define(srcDir, destDir, options) -> function`
+
+Define task
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| srcDir | string |  Source directory name |
+| destDir | string |  Destination directory name |
+| options | Object |  Optional settings |
+| options.pattern | string&amp;#124;string[] |  File name pattern |
+| options.presets | string[] |  Babel preset names |
 
 
-<!-- Section from "doc/guides/03.Functions.md.hbs" End -->
+
+<!-- Section from "doc/guides/03.Signature.md.hbs" End -->
 
 
 <!-- Sections Start -->

@@ -32,8 +32,21 @@ module.exports = readmeMdBud({
         return {
           name: func.name,
           description: comments.description,
-          params: comments.param.filter(({ name }) => !/\./.test(name)),
-          returns: comments.returns && comments.returns[ 0 ]
+          params: comments.param.map(({ type, name, description }) => ({
+            name: name.trim(),
+            type: type.replace(/\|/g, '&#124;'),
+            description: description.trim().replace(/^-/, ''),
+          })),
+          returns: comments.returns && comments.returns[ 0 ],
+          get signature () {
+            let { name, params, returns } = this
+            let paramsText = params.map(({ name }) => name).filter((name) => !/\./.test(name)).join(', ')
+            let signature = `${name}(${paramsText})`
+            if (returns) {
+              signature += ` -> ${returns.type}`
+            }
+            return signature
+          }
         }
       })
   }
