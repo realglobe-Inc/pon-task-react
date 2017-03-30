@@ -6,7 +6,7 @@
 
 const { readmeMdBud } = require('ape-tmpl')
 const pkg = require('./package.json')
-const { commentsInFile } = require('ape-doc')
+const { functionComments } = require('pon-doc')
 const aglob = require('aglob')
 
 module.exports = readmeMdBud({
@@ -27,27 +27,8 @@ module.exports = readmeMdBud({
     funcs: aglob.sync('lib/*.js')
       .filter((filename) => !/index\.js$/.test(filename))
       .map((filename) => {
-        let [ comments ] = commentsInFile(filename)
-        let [ func ] = comments.function
-        return {
-          name: func.name,
-          description: comments.description,
-          params: comments.param.map(({ type, name, description }) => ({
-            name: name.trim(),
-            type: type.replace(/\|/g, '&#124;'),
-            description: description.trim().replace(/^-/, ''),
-          })),
-          returns: comments.returns && comments.returns[ 0 ],
-          get signature () {
-            let { name, params, returns } = this
-            let paramsText = params.map(({ name }) => name).filter((name) => !/\./.test(name)).join(', ')
-            let signature = `${name}(${paramsText})`
-            if (returns) {
-              signature += ` -> ${returns.type}`
-            }
-            return signature
-          }
-        }
+        let comments = functionComments(filename)
+        return comments && comments[ 0 ]
       })
   }
 })
