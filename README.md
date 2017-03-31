@@ -112,8 +112,9 @@ Define task
 | srcDir | string |  Source directory name |
 | destDir | string |  Destination directory name |
 | options | Object |  Optional settings |
-| options.pattern | string&amp;#124;string[] |  File name pattern |
-| options.presets | string[] |  Babel preset names |
+| options.pattern | string&#124;string[] |  File name pattern |
+| options.presets | string[] |  Babel preset names
+* @param {number} [options.watchDelay=100] - Delay after watch |
 
 
 
