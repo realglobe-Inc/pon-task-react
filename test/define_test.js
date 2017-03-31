@@ -7,6 +7,7 @@
 const define = require('../lib/define.js')
 const colorprint = require('colorprint')
 const { ok } = require('assert')
+const ponContext = require('pon-context')
 const co = require('co')
 
 describe('define', function () {
@@ -21,9 +22,7 @@ describe('define', function () {
   }))
 
   it('Define', () => co(function * () {
-    let ctx = {
-      logger: colorprint.create()
-    }
+    let ctx = ponContext()
     let task = define(
       `${__dirname}/../misc/mocks`,
       `${__dirname}/../tmp/testing`,
