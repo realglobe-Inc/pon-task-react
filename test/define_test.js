@@ -5,7 +5,6 @@
 'use strict'
 
 const define = require('../lib/define.js')
-const colorprint = require('colorprint')
 const { ok } = require('assert')
 const ponContext = require('pon-context')
 const co = require('co')
