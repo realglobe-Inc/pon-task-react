@@ -44,6 +44,7 @@
     "colorprint": "^4.1.0",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
+    "pon-context": "^1.1.4",
     "pon-doc": "^1.0.1",
     "react": "^15.4.2",
     "sg-templates": "^1.4.4",
