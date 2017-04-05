@@ -113,8 +113,8 @@ Define task
 | destDir | string |  Destination directory name |
 | options | Object |  Optional settings |
 | options.pattern | string&#124;string[] |  File name pattern |
-| options.presets | string[] |  Babel preset names
-* @param {number} [options.watchDelay=100] - Delay after watch |
+| options.presets | string[] |  Babel preset names |
+| options.watchDelay | number |  Delay after watch |
 
 
 
