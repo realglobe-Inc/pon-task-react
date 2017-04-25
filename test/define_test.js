@@ -13,7 +13,7 @@ const writeout = require('writeout')
 const co = require('co')
 
 describe('define', function () {
-  this.timeout(3000)
+  this.timeout(5000)
 
   before(() => co(function * () {
 
