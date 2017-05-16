@@ -24,6 +24,7 @@
   "homepage": "https://github.com/realglobe-Inc/pon-task-react#readme",
   "dependencies": {
     "babel-core": "^6.24.1",
+    "babel-plugin-css-modules-transform": "^1.2.7",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-es2017": "^6.24.1",

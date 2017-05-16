@@ -1,9 +1,10 @@
 'use strict'
 
-const React = require('react')
+import React from 'react'
+import css from './mock-react.css'
 
 const SomeComponent = ({ id }) => (
-  <div className="some-component" id={id}>Hpge</div>
+  <div className={css.hoge} id={id}>Hpge</div>
 )
 
 export default SomeComponent
