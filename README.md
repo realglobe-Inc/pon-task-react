@@ -114,6 +114,7 @@ Define task
 | options | Object |  Optional settings |
 | options.pattern | string&#124;string[] |  File name pattern |
 | options.presets | string[] |  Babel preset names |
+| optinos.plugins | string[] |  Babel plugin names |
 | options.watchDelay | number |  Delay after watch |
 
 
