@@ -114,8 +114,17 @@ Define task
 | options | Object |  Optional settings |
 | options.pattern | string&#124;string[] |  File name pattern |
 | options.presets | string[] |  Babel preset names |
-| optinos.plugins | string[] |  Babel plugin names |
+| options.extractCss | string |  Path to extract css |
+| options.plugins | string[] |  Babel plugin names |
 | options.watchDelay | number |  Delay after watch |
+
+
+### ``
+
+
+
+| Param | type | Description |
+| ---- | --- | ----------- |
 
 
 
