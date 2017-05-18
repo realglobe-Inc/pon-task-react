@@ -28,7 +28,10 @@ describe('define', function () {
     let task = define(
       `${__dirname}/../misc/mocks`,
       `${__dirname}/../tmp/testing`,
-      { pattern: [ '**/*.js', '**/*.jsx' ] }
+      {
+        pattern: [ '**/*.js', '**/*.jsx' ],
+        extractCss: `${__dirname}/../tmp/testing/bundle.css`
+      }
     )
     ok(task)
 
