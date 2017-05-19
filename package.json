@@ -48,6 +48,7 @@
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
+    "pon-task-css": "^2.0.2",
     "react": "^15.5.4",
     "sg-templates": "^1.4.4",
     "sugos-travis": "^2.0.7",

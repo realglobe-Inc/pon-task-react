@@ -1,0 +1,21 @@
+:root {
+  --errorColor: #E111;
+  --err: {
+    color: #111;
+  };
+  --err2: {
+    color: #111;
+  };
+}
+
+.hoge {
+  color: var(--errorColor);
+
+  & .fuge {
+    font-weight: bold;
+  }
+}
+
+.body .main{
+  color: #555;
+}
