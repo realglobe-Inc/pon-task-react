@@ -30,7 +30,7 @@ describe('define', function () {
       `${__dirname}/../tmp/testing`,
       {
         pattern: [ '**/*.js', '**/*.jsx' ],
-        extractCss: `${__dirname}/../tmp/testing/bundle.css`
+        extractCss: `${__dirname}/../tmp/testing/bundle.pcss`
       }
     )
     ok(task)
