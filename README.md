@@ -116,6 +116,7 @@ Define task
 | options.presets | string[] |  Babel preset names |
 | options.extractCss | string |  Path to extract css |
 | options.plugins | string[] |  Babel plugin names |
+| options.watchTargets | string[] |  Additional watch target filenames |
 | options.watchDelay | number |  Delay after watch |
 
 
