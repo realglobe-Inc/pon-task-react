@@ -9,11 +9,13 @@ const { ok } = require('assert')
 const ponContext = require('pon-context')
 const asleep = require('asleep')
 const writeout = require('writeout')
+const fs = require('fs')
+const filecopy = require('filecopy')
 
 const co = require('co')
 
 describe('define', function () {
-  this.timeout(5000)
+  this.timeout(80000)
 
   before(() => co(function * () {
 
@@ -52,6 +54,46 @@ describe('define', function () {
     yield asleep(300)
     yield writeout(src, 'export default () => (<h3 />)', { mkdirp: true })
     yield asleep(300)
+  }))
+
+  it('Watch pcss', () => co(function * () {
+    let ctx = ponContext()
+    let mockDir = `${__dirname}/../misc/mocks`
+    let srcDir = `${__dirname}/../tmp/testing-watching-pcss/src`
+    let destDir = `${__dirname}/../tmp/testing-watching-pcss/dest`
+    let extractCss = `${__dirname}/../tmp/testing/watching-bundle.pcss`
+    yield filecopy(`${mockDir}/mock-react.jsx`, `${srcDir}/mock-react.jsx`, { mkdirp: true })
+    yield filecopy(`${mockDir}/mock-react.pcss`, `${srcDir}/mock-react.pcss`, { mkdirp: true })
+    define(srcDir, destDir, {
+      pattern: [ '**/*.jsx' ],
+      watchTargets: [ `${srcDir}/**/*.pcss` ],
+      watchDelay: 1,
+      extractCss
+    }).watch(ctx)
+
+    const writeFileAsync = (file, text) => new Promise((resolve, reject) => {
+      fs.writeFile(
+        file,
+        text,
+        { flag: 'a' },
+        (err) => err ? reject(err) : resolve()
+      )
+    })
+
+    yield asleep(500)
+
+    yield writeFileAsync(
+      `${srcDir}/mock-react.pcss`,
+      '\n.one { color: red; }'
+    )
+
+    yield asleep(5000)
+
+    yield writeFileAsync(
+      `${srcDir}/mock-react.pcss`,
+      '\n.two { color: red; }'
+    )
+    yield asleep(3000)
   }))
 })
 

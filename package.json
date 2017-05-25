@@ -45,6 +45,7 @@
     "ape-updating": "^4.1.1",
     "asleep": "^1.0.3",
     "coz": "^6.0.20",
+    "filecopy": "^3.0.1",
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
