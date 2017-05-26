@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "description": "React compile task for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -30,6 +30,7 @@
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "co": "^4.6.0",
+    "pon-cache": "^1.0.1",
     "pon-task-compile": "^2.1.5"
   },
   "devDependencies": {
