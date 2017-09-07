@@ -11,17 +11,17 @@ const co = require('co')
 describe('generate-scoped-name', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Generate scoped name', () => co(function * () {
+  it('Generate scoped name', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

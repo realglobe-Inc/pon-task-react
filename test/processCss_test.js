@@ -11,17 +11,17 @@ const co = require('co')
 describe('process-css', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Process css', () => co(function * () {
+  it('Process css', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

@@ -11,17 +11,17 @@ const co = require('co')
 describe('plugins', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Plugins', () => co(function * () {
+  it('Plugins', async () => {
 
-  }))
+  })
 })
 
 /* global describe, before, after, it */

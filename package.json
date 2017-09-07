@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "React compile task for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -25,11 +25,8 @@
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-plugin-css-modules-transform": "^1.2.7",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2016": "^6.24.1",
-    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "co": "^4.6.0",
     "pon-cache": "^1.0.1",
     "pon-task-compile": "^2.1.5"
   },
@@ -42,21 +39,21 @@
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^5.0.20",
+    "ape-tmpl": "^6.0.0",
     "ape-updating": "^4.1.1",
     "asleep": "^1.0.3",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
-    "pon-task-css": "^2.0.2",
+    "pon-task-css": "^3.0.1",
     "react": "^15.5.4",
     "sg-templates": "^1.4.4",
     "sugos-travis": "^2.0.7",
     "writeout": "^2.2.0"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=7.6",
     "npm": ">=4"
   }
 }
