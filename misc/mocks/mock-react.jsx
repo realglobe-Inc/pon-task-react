@@ -4,7 +4,7 @@ import React from 'react'
 import css from './mock-react.pcss'
 
 const SomeComponent = ({ id }) => (
-  <div className={css.hoge} id={id}>Hpge</div>
+  <div className={css.hoge} id={id}>Hoge</div>
 )
 
 export default SomeComponent
