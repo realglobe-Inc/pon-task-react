@@ -27,8 +27,7 @@ describe('define', function () {
       `${__dirname}/../misc/mocks`,
       `${__dirname}/../tmp/testing`,
       {
-        pattern: ['**/*.js', '**/*.jsx'],
-        extractCss: `${__dirname}/../tmp/testing/bundle.pcss`
+        pattern: ['**/*.js', '**/*.jsx']
       }
     )
     ok(task)
@@ -45,11 +44,12 @@ describe('define', function () {
     let src = srcDir + '/foo.jsx'
     await writeout(src, 'export default () => (<div />)', {mkdirp: true})
     await asleep(100)
-    define(srcDir, destDir, {watchDelay: 1}).watch(ctx)
+    const close = await define(srcDir, destDir, {watchDelay: 1}).watch(ctx)
     await writeout(src, 'export default () => (<span />)', {mkdirp: true})
     await asleep(300)
     await writeout(src, 'export default () => (<h3 />)', {mkdirp: true})
     await asleep(300)
+    close()
   })
 })
 
