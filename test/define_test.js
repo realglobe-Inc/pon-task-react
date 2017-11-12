@@ -22,12 +22,12 @@ describe('define', function () {
   })
 
   it('Define', async () => {
-    let ctx = ponContext()
-    let task = define(
+    const ctx = ponContext()
+    const task = define(
       `${__dirname}/../misc/mocks`,
       `${__dirname}/../tmp/testing`,
       {
-        pattern: ['**/*.js', '**/*.jsx']
+        pattern: ['**/*.js', '**/*.jsx', '**/*.json']
       }
     )
     ok(task)
@@ -38,10 +38,10 @@ describe('define', function () {
   })
 
   it('Watch', async () => {
-    let ctx = ponContext({})
-    let srcDir = `${__dirname}/../tmp/testing-watching/src`
-    let destDir = `${__dirname}/../tmp/testing-watching/dest`
-    let src = srcDir + '/foo.jsx'
+    const ctx = ponContext({})
+    const srcDir = `${__dirname}/../tmp/testing-watching/src`
+    const destDir = `${__dirname}/../tmp/testing-watching/dest`
+    const src = srcDir + '/foo.jsx'
     await writeout(src, 'export default () => (<div />)', {mkdirp: true})
     await asleep(100)
     const close = await define(srcDir, destDir, {watchDelay: 1}).watch(ctx)

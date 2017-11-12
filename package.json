@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "React compile task for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -45,7 +45,6 @@
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
-    "pon-task-css": "^5.0.1",
     "react": "^16.1.0",
     "sg-templates": "^1.4.4",
     "sugos-travis": "^2.0.7",
