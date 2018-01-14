@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "3.1.4",
+  "version": "4.0.0",
   "description": "React compile task for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,17 +23,17 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-react#readme",
   "dependencies": {
-    "babel-core": "^6.24.1",
-    "babel-plugin-transform-decorators": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/plugin-syntax-decorators": "^7.0.0-beta.37",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "@babel/preset-react": "^7.0.0-beta.37",
     "pon-cache": "^1.0.1",
     "pon-task-compile": "^3.0.3"
   },
   "devDependencies": {
-    "ababel": "^2.0.3",
-    "ababel-es2015": "^2.0.1",
+    "@babel/runtime": "^7.0.0-beta.37",
+    "ababel": "^3.0.1",
     "aglob": "^3.0.0",
     "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
