@@ -28,3 +28,5 @@ function enumerable(value) {
     return descriptor;
   }
 }
+
+console.log('json5', require('./mock-json5.json5'))

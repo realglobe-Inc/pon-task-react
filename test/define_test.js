@@ -8,6 +8,7 @@ const define = require('../lib/define.js')
 const {ok} = require('assert')
 const ponContext = require('pon-context')
 const asleep = require('asleep')
+const rimraf = require('rimraf')
 const writeout = require('writeout')
 
 describe('define', function () {
@@ -23,11 +24,12 @@ describe('define', function () {
 
   it('Define', async () => {
     const ctx = ponContext()
+    rimraf.sync(`${__dirname}/../tmp/testing`)
     const task = define(
       `${__dirname}/../misc/mocks`,
       `${__dirname}/../tmp/testing`,
       {
-        pattern: ['**/*.js', '**/*.jsx', '**/*.json']
+        pattern: ['**/*.js', '**/*.jsx', '**/*.json', '**/*.json5']
       }
     )
     ok(task)

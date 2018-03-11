@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "4.1.7",
+  "version": "4.2.0",
   "description": "React compile task for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -33,6 +33,7 @@
     "@babel/plugin-transform-runtime": "^7.0.0-beta.40",
     "@babel/preset-env": "^7.0.0-beta.40",
     "@babel/preset-react": "^7.0.0-beta.40",
+    "json5": "^0.5.1",
     "pon-cache": "^1.0.1",
     "pon-task-compile": "^3.0.3"
   },
