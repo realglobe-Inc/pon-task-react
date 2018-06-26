@@ -50,11 +50,11 @@
     "ape-updating": "^5.0.1",
     "asleep": "^1.0.3",
     "coz": "^7.0.2",
-    "flow-bin": "^0.74.0",
+    "flow-bin": "^0.75.0",
     "injectmock": "^2.0.0",
     "pon-context": "^3.0.2",
     "pon-doc": "^2.0.1",
-    "react": "^16.4.0",
+    "react": "^16.4.1",
     "sg-templates": "^1.4.4",
     "writeout": "^2.2.1"
   },
