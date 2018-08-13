@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "React compile task for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.0.0-rc.1",
-    "ababel": "^5.0.2",
+    "ababel": "^5.0.3",
     "aglob": "^3.0.1",
     "amocha": "^5.0.0",
     "ape-doc": "^2.0.4",
