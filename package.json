@@ -24,7 +24,7 @@
   "homepage": "https://github.com/realglobe-Inc/pon-task-react#readme",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
     "@babel/plugin-proposal-do-expressions": "^7.0.0",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
@@ -36,8 +36,8 @@
     "pon-task-compile": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "@babel/runtime": "^7.1.5",
     "ababel": "^5.0.6",
     "aglob": "^3.0.1",
@@ -54,7 +54,7 @@
     "injectmock": "^2.0.0",
     "pon-context": "^3.0.2",
     "pon-doc": "^2.0.1",
-    "react": "^16.6.1",
+    "react": "^16.6.3",
     "sg-templates": "^1.4.4",
     "writeout": "^2.2.1"
   },

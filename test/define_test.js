@@ -5,7 +5,7 @@
 'use strict'
 
 const define = require('../lib/define.js')
-const {ok} = require('assert')
+const { ok } = require('assert')
 const ponContext = require('pon-context')
 const asleep = require('asleep')
 const rimraf = require('rimraf')
@@ -29,6 +29,7 @@ describe('define', function () {
       `${__dirname}/../misc/mocks`,
       `${__dirname}/../tmp/testing`,
       {
+        legacyDecorator: false,
         pattern: ['**/*.js', '**/*.jsx', '**/*.json', '**/*.json5']
       }
     )
@@ -37,6 +38,8 @@ describe('define', function () {
     await Promise.resolve(task(ctx))
 
     ok(require('../tmp/testing/mock-react'))
+    ok(require('../tmp/testing/mock-obj'))
+
   })
 
   it('Watch', async () => {
@@ -44,12 +47,12 @@ describe('define', function () {
     const srcDir = `${__dirname}/../tmp/testing-watching/src`
     const destDir = `${__dirname}/../tmp/testing-watching/dest`
     const src = srcDir + '/foo.jsx'
-    await writeout(src, 'export default () => (<div />)', {mkdirp: true})
+    await writeout(src, 'export default () => (<div />)', { mkdirp: true })
     await asleep(100)
-    const close = await define(srcDir, destDir, {watchDelay: 1}).watch(ctx)
-    await writeout(src, 'export default () => (<span />)', {mkdirp: true})
+    const close = await define(srcDir, destDir, { watchDelay: 1 }).watch(ctx)
+    await writeout(src, 'export default () => (<span />)', { mkdirp: true })
     await asleep(300)
-    await writeout(src, 'export default () => (<h3 />)', {mkdirp: true})
+    await writeout(src, 'export default () => (<h3 />)', { mkdirp: true })
     await asleep(300)
     close()
   })
