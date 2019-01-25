@@ -4,12 +4,14 @@ import React from 'react'
 import j from './mock-json.json'
 
 console.log(j)
-const SomeComponent = ({id}) => (
+
+
+const SomeComponent = ({ id }) => (
   <div id={id}>HogeHoge</div>
 )
 
-const a = {foo: 1}
-const b = {...a}
+const a = { foo: 1 }
+const b = { ...a }
 
 console.log(a?.foo)
 
