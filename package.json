@@ -32,9 +32,10 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "asfs": "^2.2.0",
     "json5": "^2.1.0",
     "pon-cache": "^1.0.1",
-    "pon-task-compile": "^4.0.3"
+    "pon-task-compile": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
@@ -44,7 +45,7 @@
     "aglob": "^3.0.1",
     "amocha": "^5.0.1",
     "ape-doc": "^2.0.4",
-    "ape-formatting": "^1.0.2",
+    "ape-formatting": "^2.0.0",
     "ape-releasing": "^5.0.1",
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^6.0.12",
