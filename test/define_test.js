@@ -36,7 +36,6 @@ describe('define', function () {
     ok(task)
 
     await Promise.resolve(task(ctx))
-
     ok(require('../tmp/testing/mock-react'))
     ok(require('../tmp/testing/mock-obj'))
 
