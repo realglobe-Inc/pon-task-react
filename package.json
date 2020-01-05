@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "5.1.14",
+  "version": "5.1.15",
   "description": "React compile task for pon",
   "main": "lib",
   "browser": "shim/browser",
