@@ -1,6 +1,6 @@
 {
   "name": "pon-task-react",
-  "version": "5.3.4",
+  "version": "5.3.5",
   "description": "React compile task for pon",
   "main": "lib",
   "scripts": {
@@ -32,7 +32,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-transform-modules-commonjs": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
     "@babel/preset-flow": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
     "asfs": "^2.3.0",
@@ -41,7 +41,7 @@
     "pon-task-compile": "^4.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
+    "@babel/core": "^7.8.6",
     "@babel/runtime": "^7.8.4",
     "ababel": "^6.1.2",
     "aglob": "^3.0.2",
@@ -57,7 +57,7 @@
     "injectmock": "^2.0.0",
     "pon-context": "^3.0.2",
     "pon-doc": "^3.0.1",
-    "react": "^16.12.0",
+    "react": "^16.13.0",
     "sg-templates": "^1.4.4",
     "writeout": "^2.3.0"
   },
