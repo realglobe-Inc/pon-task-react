@@ -59,7 +59,7 @@
     "pon-doc": "^3.0.1",
     "react": "^16.13.0",
     "sg-templates": "^1.4.4",
-    "writeout": "^2.3.0"
+    "writeout": "^2.3.1"
   },
   "engines": {
     "node": ">=8",
