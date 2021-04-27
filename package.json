@@ -58,7 +58,7 @@
     "mkdirp": "^1.0.4",
     "pon-context": "^3.0.2",
     "pon-doc": "^3.0.1",
-    "react": "^16.14.0",
+    "react": "^17.0.2",
     "sg-templates": "^1.4.4",
     "writeout": "^2.3.4"
   },
